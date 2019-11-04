@@ -1,0 +1,6 @@
+<% @students.each do |student| %>
+    <%= content_tag(:div, student, class: "student") do %>
+        <%= content_tag(:h1, "#{student.to_s}") %>
+    <% end %>
+<% end %>
+
